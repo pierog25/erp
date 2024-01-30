@@ -73,7 +73,7 @@ class Asset(AccountsController):
 		if not item:
 			frappe.throw(_("Item {0} does not exist").format(self.item_code))
 		elif item.disabled:
-			frappe.throw(_("Item {0} has been disabled").format(self.item_code))
+			frappe.throw(_("Item {0} has been disabled 2").format(self.item_code))
 		elif not item.is_fixed_asset:
 			frappe.throw(_("Item {0} must be a Fixed Asset Item").format(self.item_code))
 		elif item.is_stock_item:
