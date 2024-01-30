@@ -80,7 +80,7 @@ class Lead(SellingController):
 			duplicate_leads = [lead.name for lead in duplicate_leads]
 
 			if duplicate_leads:
-				frappe.throw(_("Email Address must be unique, already exists for {0}")
+				frappe.throw(_("Email Address must be unique, wwww already exists for {0}")
 					.format(comma_and(duplicate_leads)), frappe.DuplicateEntryError)
 
 	def on_trash(self):
